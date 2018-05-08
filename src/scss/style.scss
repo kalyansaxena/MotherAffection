@@ -1,0 +1,171 @@
+body{
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar{
+  border-bottom: 3px solid pink;
+  
+}
+
+#home-section{
+  background: url("../img/sm1.jpeg") no-repeat;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dark-overlay{
+  background-color: rgba(0,0,0,0.7);
+  min-height: 500px;
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+}
+
+.home-inner{
+  padding-top: 150px;
+}
+
+#section-m,#section-m2,#section-m3{
+  color:#000;
+}
+
+#section-3 h1{
+  border-bottom: 3px solid #fff;
+}
+
+#section-3{
+  background: url("../img/friends.jpg") no-repeat;
+  min-height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+}
+
+#section-3 .sb{
+  cursor: pointer;
+}
+
+#section-3 .dark-overlay2{
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  width: 100%;
+  bottom: 100;
+  left:0;
+  min-height: 400px;
+}
+
+#facts{
+  background-color: #222;
+}
+
+#facts .p-b{
+  border-bottom: 2px solid #fff;
+}
+
+.card{
+  color:#000;
+}
+
+footer ul{
+  display: flex;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+footer ul li{
+  list-style: none;
+}
+
+footer ul li a{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 10px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+footer ul li a .fa{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+footer ul li a:hover .fa{
+  transform: rotateY(360deg);
+  color:#fff;
+}
+
+footer ul li a:before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ff0;
+  transition: .5s;
+  z-index: 2;
+}
+
+footer ul li a:hover:before{
+  top:0;
+}
+
+footer ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+footer ul li:nth-child(2) a:before{
+  background: #e4405f;
+}
+
+footer ul li:nth-child(3) a:before{
+  background: #55acee;
+}
+
+footer ul li:nth-child(4) a:before{
+  background: #696969;
+}
+
+.mybtn{
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: none;
+  background-color: transparent;
+color: #fff;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.mybtn i{
+  font-size: 30px;
+
+}
+
+
+
+@media screen and (max-width:426px){
+  footer .sft{
+    padding-left:0;
+  }
+}
